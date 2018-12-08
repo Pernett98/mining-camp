@@ -8,9 +8,9 @@ aws_instance_type: m2.xlarge
 minecraft_dir: /minecraft
 
 # Set the elastic IP you'd always like associated with your instance here
-minecraft_eip_alloc_id: eipalloc-b47e8f83
+minecraft_eip_alloc_id: eipalloc-0432fb9fb84650e10
 minecraft_tag: minecraft
 
 s3_bucket: josh-minecraft
 server_name: daftcyborg
-server_file: daftcyborg-server-06-30-2018.tgz
+server_file: daftcyborg-server-12-08-2018.tgz
