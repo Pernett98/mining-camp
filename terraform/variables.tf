@@ -24,5 +24,5 @@ variable "aws_availability_zone" {
 
 variable "aws_instance_type" {
   description = "Spot instance type to launch."
-  default     = "i3.large"
+  default     = "m1.xlarge"
 }
