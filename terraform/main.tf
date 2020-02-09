@@ -87,7 +87,7 @@ data "aws_ami" "ubuntu" {
 
   filter {
     name   = "name"
-    values = ["ubuntu/images/hvm-instance/ubuntu-bionic-18.04-amd64-server-*"]
+    values = ["ubuntu/images/hvm-ssd/ubuntu-xenial-16.04-amd64-server-*"]
   }
 
   filter {
@@ -114,7 +114,7 @@ resource "aws_launch_configuration" "minecraft" {
 
   iam_instance_profile = "${aws_iam_instance_profile.minecraft.name}"
   security_groups      = ["${aws_security_group.default.id}"]
-  key_name             = "aws-public"
+  key_name             = "${var.aws_key_pair_name}"
 }
 
 # Autoscaling Group
