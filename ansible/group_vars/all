@@ -8,9 +8,9 @@ aws_instance_type: c5d.xlarge
 minecraft_dir: /minecraft
 
 # Set the elastic IP you'd always like associated with your instance here
-minecraft_eip_alloc_id: eipalloc-06939c1da392c77d5
+minecraft_eip_alloc_id: eipalloc-00a18f522b9ac6776
 minecraft_tag: minecraft
 
 s3_bucket: murphyland-minecraft
 server_name: murphyland
-server_file: murphyland-server-02-09-2020.tgz
+server_file: murphyland-server-31-01-2021.tgz
