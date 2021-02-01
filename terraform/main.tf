@@ -99,6 +99,10 @@ data "aws_ami" "ubuntu" {
 }
 
 
+# Elastic IP
+resource "aws_eip" "minecraft" {}
+
+
 # Launch configuration
 # We'll use this to easy turn on and off our server without having to remake
 # our entire instance configuration every time.
