@@ -1,5 +1,5 @@
 variable "minecraft" {
-  type = "map"
+  type = map(string)
 
   default = {
     port        = 25565
@@ -9,7 +9,7 @@ variable "minecraft" {
 
 variable "max_spot_price" {
   description = "Maximum amount to pay for per spot instance per hour."
-  default     = "0.03"
+  default     = "0.04"
 }
 
 variable "aws_region" {
